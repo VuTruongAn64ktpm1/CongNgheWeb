@@ -64,8 +64,7 @@
         <h1>Thêm sản phẩm mới</h1>
         <form method="post" action="../controllers/add.php">
             <label for="name">Tên sản phẩm:</label>
-            <input type="text" id="name" name="name" placeholder="Nhập tên sản phẩm" required>
-
+       1
             <label for="price">Giá:</label>
             <input type="number" id="price" name="price" placeholder="Nhập giá sản phẩm" min="1" required>
 
