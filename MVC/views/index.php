@@ -95,7 +95,7 @@ $products = loadProducts();
                 <tr>
                     <th>Sản phẩm</th>
                     <th>Giá thành</th>
-                    <th>Sửa</th>
+                    <th>Sửa sản phẩm</th>
                     <th>Xóa</th>
                 </tr>
             </thead>
