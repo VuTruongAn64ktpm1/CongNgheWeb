@@ -48,11 +48,11 @@ class IssueController extends Controller
         return redirect()->route('issue.index')->with('success', 'Thêm thành công!');
     }
 
-    public function edit($id)
+    public function edit(Issue $Issue)
     {
-        $Issue = Issue::with('computer')->findOrFail($id);
-        $Computer = Computer::all();
-        return view('Issue.edit', compact('Issue', 'Computer'));
+        $issue = $Issue; // Gán lại biến $Issue cho $issue để view không cần sửa
+        $computers = Computer::all();
+        return view('issue.edit', compact('issue', 'computers'));
     }
     public function update(Request $request, $id)
     {

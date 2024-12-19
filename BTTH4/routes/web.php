@@ -10,7 +10,7 @@ Route::get('/issue/create', [IssueController::class, 'create'])->name('issue.cre
 
 Route::post('/issue', [IssueController::class, 'store'])->name('issue.store');
 
-Route::get('/issue/{issue}/edit', [IssueController::class, 'edit'])->name('issue.edit');
+Route::get('/issue/{Issue}/edit', [IssueController::class, 'edit'])->name('issue.edit');
 
 Route::put('/issue/{issue}', [IssueController::class, 'update'])->name('issue.update');
 
